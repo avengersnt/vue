@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h2>Search and add a pin</h2>
+      <h2>地域を検索</h2>
       <label>
         <gmap-autocomplete
           @place_changed="setPlace">
@@ -14,7 +14,7 @@
     <br>
     <gmap-map
       :center="center"
-      :zoom="12"
+      :zoom="15"
       style="width:100%;  height: 400px;"
     >
       <gmap-marker
@@ -34,7 +34,7 @@ export default {
     return {
       // default to Montreal to keep it simple
       // change this to whatever makes sense
-      center: { lat: 45.508, lng: -73.587 },
+      center: { lat: 26.231408, lng: 127.685525 },
       markers: [],
       places: [],
       currentPlace: null
