@@ -1,4 +1,6 @@
 <template>
+<div class="app">
+    <div id="map">
 <GmapMap
 :center="{lat:10, lng:10}"
 :zoom="7"
@@ -14,6 +16,8 @@ style="width: 500px; height: 300px"
   @click="center=m.position"
 />
 </GmapMap>
+</div>
+ </div>
 </template>
 <script>
 
